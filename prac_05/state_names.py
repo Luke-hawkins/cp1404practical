@@ -16,5 +16,5 @@ while state_code != "":
         print("Invalid short state")
     state_code = input("Enter short state: ").upper()
 
-# Prints all formatted states and names
+# Prints all formatted states and names with appropriate spacing
 [print(f"{state_code:3} is " + CODE_TO_NAME[state_code]) for state_code in CODE_TO_NAME]
