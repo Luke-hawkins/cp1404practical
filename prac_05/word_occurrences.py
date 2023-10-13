@@ -20,7 +20,9 @@ def main():
 
 def print_word_count(word_to_count):
     """Displays sorted word occurrences"""
-    [print(word + " : " + str(word_to_count[word])) for word in sorted(word_to_count)]
+    # Finds length of the longest word in word_to_count
+    width = max(map(len, word_to_count))
+    [print(f"{word:{width}} : " + str(word_to_count[word])) for word in sorted(word_to_count)]
 
 
 main()
